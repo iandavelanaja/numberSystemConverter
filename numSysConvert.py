@@ -26,6 +26,11 @@ def decToBin(n):
 
 ## main ##
 
+'''
+this is a developing code of mine: as of Mar 14, 2022, it only converts dec to bin
+
+'''
+
 str1 = int(input('Enter a number- '))
 conBin = decToBin(str1)   
 
