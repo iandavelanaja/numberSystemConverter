@@ -23,7 +23,7 @@ def decToBin(n):
         i = str(i)
         str1 = str1 + i
 
-    return int(str1)
+    return str1
 
 def binToDec(num):
     '''
@@ -49,8 +49,46 @@ def binToDec(num):
         n = n + 1
         total = total + dcml
 
-
     return int(total)
+
+def hexToOct(n):
+    """
+    FUNCTION NOT YET FINISHED!
+    """
+    str1 = ''
+    decList = []
+    oct = 0
+    for numbr in n:
+        if numbr == 'a' or 'b' or 'c' or 'd' or 'e' or 'f' or 'A' or 'B' or 'C' or 'D' or 'E' or 'F':
+            if numbr == 'a' or 'A':
+                decList.append(11)
+                continue
+            if numbr == 'b' or 'B':
+                decList.append(12)
+                continue
+            if numbr == 'c' or 'C':
+                decList.append(13)
+                continue
+            if numbr == 'd' or 'D':
+                decList.append(14)
+                continue
+            if numbr == 'e' or 'E':
+                decList.append(15)
+                continue
+            if numbr == 'f' or 'F':
+                decList.append(16)
+                continue
+        if numbr.isdigit():
+            numbr = int(numbr)
+            decList.append(numbr)
+            continue
+        else:
+            print('Please input valid value. Quitting...')
+            quit()
+    for i in decList:
+        str1 = decToBin(i) + str1
+    return oct
+
 
 ## main ##
 
