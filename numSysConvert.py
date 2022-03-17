@@ -119,4 +119,5 @@ try:
                 quit()
 except ValueError:
     print('Entered operation not valid. Quitting...')
+    print('Please try again...')
     quit()
